@@ -1,0 +1,28 @@
+ <!DOCTYPE html>
+ <html lang="en" dir="ltr" ng-app = "MsgApp">
+   <head>
+     <meta charset="utf-8">
+    <script src = "angular.min.js"></script>
+    <script src = "app.js"></script>
+     <title></title>
+   </head>
+   <body>
+
+     <h1>State of Being</h1>
+
+     <div ng-controller = "MsgController">
+
+       {{sayMessage()}}
+
+<br>
+       {{name | uppercase}}
+       <br>
+
+       <button ng-click = "feed()">Feed ?</button>
+       Cost: {{cookieCost | currency : "€" : 4 }}
+       <br>
+      <img src="Images\camera{{stateOfBeing}}.png">
+     </div>
+
+   </body>
+ </html>
