@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" ng-app = "MsgApp">
+  <head>
+    <meta charset="utf-8">
+    <script src = "angular.min.js"></script>
+    <script src = "app_CustomFilter_Argument4.js"></script>
+
+    <title> Custom filters with arguments </title>
+  </head>
+  <body>
+    <h1>Custom filters with arguments </h1>
+
+    <div ng-controller = "MsgController">
+    Original : {{sayMessage()}} <br>
+    Loves : {{sayLovesMessage()}} <br>
+    Truth : {{sayLovesMessage() | Truuth : "healthy" : "cookie" }}  <br>
+
+    BIG Truth : {{sayLovesMessage() | Truuth : "healthy" : "cookie" | uppercase  }} <br>
+    </div>
+
+
+  </body>
+</html>
